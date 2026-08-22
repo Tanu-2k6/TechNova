@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechNova Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-page">
+
+<nav>
+    <h2>TechNova</h2>
+
+    <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+</nav>
+
+
+    <main class="dashboard">
+
+        <h1>Welcome, <span id="userName">User</span> 👋</h1>
+
+        <p class="subtitle">
+            Understand your financial health at a glance.
+        </p>
+ <section class="features">
+<div class="feature-card"> 
+    <h2>💸 Expense Tracker</h2> 
+    <p>Track where your money goes.</p> 
+    <button onclick="window.location.href='expense.html'">Add Expense</button> 
+</div>
+<div class="feature-card"> 
+    <h2>🎯 Goal Planner</h2> 
+    <p>Plan and track your financial goals.</p> 
+    <button onclick="window.location.href='goal.html'">Set Goal</button> 
+</div>
+
+<div class="feature-card"> 
+    <h2>📊 Risk Assessment</h2> 
+    <p>Understand your investment risk profile.</p> 
+    <button onclick="window.location.href='risk.html'">Check Profile</button> 
+</div>
+        </section>
+
+        <section class="feature-card">
+
+    <h2>💡 Financial Insights</h2>
+
+    <p>
+        Get personalized insights about your financial health,
+        spending and savings.
+    </p>
+
+    <button onclick="window.location.href='insights.html'">
+        View Insights
+    </button>
+
+</section>
+
+    </main>
+<script src="script.js"></script>
+</body>
+
+</html>
