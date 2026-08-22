@@ -1,10 +1,3 @@
-// ===============================
-// SMARTVEST JAVASCRIPT
-// ===============================
-
-
-// ---------- SIGN UP ----------
-
 function signup() {
 
     alert("Signup function is working!");
@@ -30,9 +23,6 @@ function signup() {
 
     window.location.href = "home.html";
 }
-
-
-// ---------- LOGIN ----------
 
 function login() {
 
@@ -63,18 +53,12 @@ function login() {
     }
 }
 
-
-// ---------- LOGOUT ----------
-
 function logout() {
 
     localStorage.removeItem("isLoggedIn");
 
     window.location.href = "login.html";
 }
-
-
-// ---------- CHECK LOGIN ----------
 
 function checkLogin() {
 
@@ -87,9 +71,6 @@ function checkLogin() {
 
     }
 }
-
-
-// ---------- SHOW USER NAME ----------
 
 function showUserName() {
 
@@ -106,19 +87,10 @@ function showUserName() {
 
     }
 }
-
-
-// =================================
-// EXPENSE TRACKER
-// =================================
-
 let expenses =
     JSON.parse(
         localStorage.getItem("smartvestExpenses")
     ) || [];
-
-
-// ADD EXPENSE
 
 function addExpense() {
 
@@ -141,8 +113,6 @@ function addExpense() {
         return;
 
     }
-
-
     const expense = {
 
         amount: amount,
@@ -151,9 +121,7 @@ function addExpense() {
 
     };
 
-
     expenses.push(expense);
-
 
     localStorage.setItem(
         "smartvestExpenses",
@@ -168,9 +136,6 @@ function addExpense() {
 
     document.getElementById("expenseDescription").value = "";
 }
-
-
-// DISPLAY EXPENSES
 
 function displayExpenses() {
 
@@ -227,12 +192,6 @@ function displayExpenses() {
 
     calculateSavings();
 }
-
-
-// =================================
-// INCOME & SAVINGS
-// =================================
-
 function calculateSavings() {
 
     const income =
@@ -273,11 +232,6 @@ function calculateSavings() {
         savings
     );
 }
-
-
-// =================================
-// GOAL PLANNER
-// =================================
 
 function calculateGoal() {
 
@@ -341,11 +295,6 @@ function calculateGoal() {
     ).textContent =
         progress + "%";
 }
-
-
-// =================================
-// RISK ASSESSMENT
-// =================================
 
 function calculateRisk() {
 
@@ -415,11 +364,6 @@ function calculateRisk() {
     );
 }
 
-
-// =================================
-// FINANCIAL HEALTH SCORE
-// =================================
-
 function calculateFinancialHealth(
     income = 25000,
     expensesAmount = 0,
@@ -433,9 +377,6 @@ function calculateFinancialHealth(
         income > 0
             ? (savings / income) * 100
             : 0;
-
-
-    // Savings score
 
     if (savingsRate >= 40) {
 
@@ -452,9 +393,6 @@ function calculateFinancialHealth(
         score += 10;
 
     }
-
-
-    // Expense control
 
     const expenseRate =
         income > 0
@@ -497,11 +435,6 @@ function calculateFinancialHealth(
         savingsRate
     );
 }
-
-
-// =================================
-// PERSONALIZED INSIGHTS
-// =================================
 
 function generateInsights(
     income,
@@ -560,16 +493,10 @@ function generateInsights(
         message;
 }
 
-
-// =================================
-// RUN WHEN PAGE LOADS
-// =================================
-
 document.addEventListener(
     "DOMContentLoaded",
     function() {
 
-        // Dashboard authentication
 
         if (
             document.body.classList.contains(
@@ -589,9 +516,6 @@ document.addEventListener(
 
     }
 ); 
- // ===============================
-// DASHBOARD NAVIGATION
-// ===============================
 
 function scrollToSection(sectionId) {
 
