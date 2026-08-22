@@ -238,10 +238,6 @@ button:hover {
     background: #f5f7fb;
 }
 
-/* =========================
-   AUTHENTICATION
-========================= */
-
 .auth-container {
     min-height: 100vh;
 
@@ -293,8 +289,6 @@ button:hover {
 
     margin-bottom: 15px;
 }
-
-/* FUNCTIONAL SECTIONS */
 
 .expense-section,
 .goal-section,
@@ -379,10 +373,6 @@ button:hover {
     line-height: 1.6;
 } 
 
-/* =========================
-   FINANCIAL INSIGHTS PAGE
-========================= */
-
 .insights-page {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -424,10 +414,6 @@ button:hover {
     height: 45px;
 }
 
-/* =========================
-   HOME PAGE
-========================= */
-
 .home-hero {
     min-height: 500px;
     display: flex;
@@ -463,9 +449,6 @@ button:hover {
     text-decoration: none;
 }
 
-
-/* ABOUT */
-
 .about-section {
     background: rgba(0, 25, 30, 0.65);
     text-align: center;
@@ -482,9 +465,6 @@ button:hover {
     line-height: 1.7;
     font-size: 17px;
 }
-
-
-/* FEATURES */
 
 .home-features {
     padding: 60px 8%;
@@ -521,9 +501,6 @@ button:hover {
     line-height: 1.6;
 }
 
-
-/* CONTACT */
-
 .contact-section {
     background: rgba(0, 25, 30, 0.65);
     text-align: center;
@@ -543,9 +520,6 @@ button:hover {
 .contact-details p {
     margin: 12px;
 }
-
-
-/* FOOTER */
 
 footer {
     text-align: center;
