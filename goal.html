@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Goal Planner - TechNova</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-page">
+
+<nav>
+    <h2>TechNova</h2>
+
+    <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <button onclick="logout()">Logout</button>
+    </div>
+</nav>
+
+<main class="dashboard">
+
+    <h1>🎯 Goal Planner</h1>
+
+    <p class="subtitle">
+        Plan your financial goals and calculate how much you need to save.
+    </p>
+
+    <section class="goal-section">
+
+        <h2>Set Your Financial Goal</h2>
+
+        <input
+            type="text"
+            id="goalName"
+            placeholder="Goal Name"
+        >
+
+        <input
+            type="number"
+            id="goalTarget"
+            placeholder="Target Amount"
+        >
+
+        <input
+            type="number"
+            id="currentSavings"
+            placeholder="Current Savings"
+        >
+
+        <input
+            type="number"
+            id="goalMonths"
+            placeholder="Time in Months"
+        >
+
+        <button onclick="calculateGoal()">
+            Calculate Plan
+        </button>
+
+        <h3>
+            Monthly Saving Required:
+            <span id="monthlySaving">₹0 / month</span>
+        </h3>
+
+        <p>
+            Goal Progress:
+            <span id="goalProgress">0%</span>
+        </p>
+
+    </section>
+<button class="back-button" onclick="window.location.href='dashboard.html'">Back</button>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
